@@ -8,4 +8,4 @@ RUN apk add --no-cache curl && \
 
 EXPOSE 8888
 
-CMD sh -c "chisel server --port 8888 --socks5 --auth \"$CHISEL_AUTH\""
+CMD ["chisel", "server", "--port", "8888", "--socks5"]
